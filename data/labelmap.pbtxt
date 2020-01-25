@@ -1,0 +1,30 @@
+item {
+  id: 1
+  name: 'bintang laut'
+}
+
+item {
+  id: 2
+  name: 'cupang'
+}
+
+item {
+  id: 3
+  name: 'mas'
+}
+
+item {
+  id: 4
+  name: 'louhan'
+}
+
+item {
+  id: 5
+  name: 'koi'
+}
+
+item {
+  id: 6
+  name: 'arwana'
+}
+

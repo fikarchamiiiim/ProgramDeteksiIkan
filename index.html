@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="file" accept="image/*;capture=camera">
+    <input type="file" accept="video/*;capture=camcorder">
+    <input type="file" accept="audio/*;capture=microphone">
+    <device type="media" onchange="update(this.data)"></device>
+    <video autoplay></video>
+    <script>
+        function update(stream) {
+            document.querySelector('video').src = stream.url;
+        }
+        function hasGetUserMedia() {
+            return !!(navigator.mediaDevices &&
+                navigator.mediaDevices.getUserMedia);
+        }
+
+        if (hasGetUserMedia()) {
+            // Good to go!
+        } else {
+            alert('getUserMedia() is not supported by your browser');
+        }
+        <video autoplay></video>
+        const constraints = {
+            video: true
+        };
+
+        const video = document.querySelector('video');
+
+        navigator.mediaDevices.getUserMedia(constraints).
+            then((stream) => { video.srcObject = stream });
+    </script>
+
+</body>
+
+</html>

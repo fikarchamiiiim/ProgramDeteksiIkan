@@ -1,3 +1,5 @@
+frozen_inference_graph.pb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
